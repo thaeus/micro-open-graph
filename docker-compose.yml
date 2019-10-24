@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  micro-open-graph:
+    environment:
+      - VIRTUAL_HOST=linkinfo.infinito.blue
+      - LETSENCRYPT_HOST=linkinfo.infinito.blue
+    build: .
+    image: mountain/micro-open-graph
+    container_name: micro-open-graph
+    ports:
+      # strapi runs on port 1337, so map this port out to port 7002 to access it.  the container always
+      # specifies this it exposes this port in the Dockerfile.  to change this port (1337), change Dockerfile
+      - 9211:9211
+    networks:
+      - mongonet
+    restart: always
+
+networks:
+  mongonet:
+    external: true
+
