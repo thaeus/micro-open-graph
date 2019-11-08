@@ -20,3 +20,15 @@ networks:
   mongonet:
     external: true
 
+#example usage
+#http://linkinfo.infinito.blue:9211/?url=https://imgflip.com/i/3e9hy7
+#author	null
+#date	null
+#description	"A Change My Mind meme. Caption your own images or memes with our Meme Generator."
+#image	"https://i.imgflip.com/3e9hy7.jpg"
+#logo	"https://imgflip.com/apple-touch-icon.png"
+#publisher	"Imgflip"
+#title	"Change My Mind"
+#url	"https://imgflip.com/i/3e9hy7"
+#lang	null
+#video	null
